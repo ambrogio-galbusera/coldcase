@@ -1,0 +1,29 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: rtc}
+children:
+- type: Symbols
+  children:
+  - type: Hex
+    attributes: {id: RTC_MODE0_INTENSET}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: rtc, value: '256'}
+  - type: Boolean
+    attributes: {id: RTC_MODE0_INTENSET_CMP0_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+  - type: Boolean
+    attributes: {id: RTC_MODE0_MATCHCLR}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
+- type: ElementPosition
+  attributes: {x: '516', y: '50', id: rtc}
